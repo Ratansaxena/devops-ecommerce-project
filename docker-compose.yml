@@ -1,0 +1,12 @@
+services:
+  app:
+    image: ecommerce-app
+    container_name: ecommerce-app
+    ports:
+      - "3000:3000"
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
